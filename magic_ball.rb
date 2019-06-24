@@ -12,7 +12,7 @@ print reader.read_from_file(File.dirname(__FILE__) + "/data/greetings.txt")
   print "."
 end
 
-sleep 0.5
+sleep 0.7
 print ": "
 
 puts reader.read_from_file(File.dirname(__FILE__) + "/data/forecasts.txt")
