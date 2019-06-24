@@ -1,11 +1,8 @@
 # encoding: utf-8
 # Задача 23-4 — Волшебный шар в github
 
-require_relative "lib/phrase_reader"
-
-reader = PhraseReader.new
-
-print reader.read_from_file(File.dirname(__FILE__) + "/data/greetings.txt")
+greeting = File.readlines(File.dirname(__FILE__) + "/data/greetings.txt")
+print greeting.sample.chomp
 
 3.times do
   sleep 0.5
@@ -15,5 +12,6 @@ end
 sleep 0.7
 print ": "
 
-puts reader.read_from_file(File.dirname(__FILE__) + "/data/forecasts.txt")
+forecast = File.readlines(File.dirname(__FILE__) + "/data/forecasts.txt")
+puts forecast.sample.chomp
 sleep 3
