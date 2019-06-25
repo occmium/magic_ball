@@ -67,5 +67,5 @@ Table for example|1|2|3
 2| Ruby | 2.5.5p157|empty
 3|Буквы |Цифры|пусто
 
-[Наверх](#to_lift)|
+[Наверх](#to_lift)
 
