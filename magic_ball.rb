@@ -1,13 +1,9 @@
 # encoding: utf-8
 # Задача 23-4 — Волшебный шар в github
 
-f = File.new("./data/greetings.txt", "r:UTF-8")
-greeting = f.readlines(chomp: true).sample
-f.close
+greeting = File.readlines("./data/greetings.txt", chomp: true).sample
 
-f = File.new("./data/forecasts.txt", "r:UTF-8")
-forecast = f.readlines(chomp: true).sample
-f.close
+forecast = File.readlines("./data/forecasts.txt", chomp: true).sample
 
 print greeting
 
@@ -16,7 +12,7 @@ print greeting
   print "."
 end
 
-sleep 0.7
+sleep 0.3
 print ": "
 
 puts forecast
