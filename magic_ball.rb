@@ -7,7 +7,7 @@ forecast = File.readlines("./data/forecasts.txt", chomp: true).sample
 
 print greeting
 
-3.times do
+5.times do
   sleep 0.5
   print "."
 end
